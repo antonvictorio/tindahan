@@ -13,6 +13,8 @@
 // to also remove its path from "config.paths.watched".
 import "phoenix_html"
 
+window.jQuery = window.$ = require('jquery')
+
 // Import local files
 //
 // Local files can be imported directly using relative
