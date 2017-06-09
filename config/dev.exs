@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :tindahan, Tindahan.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
-  password: "",
+  password: "p@ssw0rd",
   database: "tindahan_dev",
   hostname: "localhost",
   pool_size: 10
