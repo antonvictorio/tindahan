@@ -50,9 +50,9 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :tindahan, Tindahan.Repo,
-  adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "p@ssw0rd",
-  database: "tindahan_dev",
-  hostname: "localhost",
+  adapter: Ecto.Adapters.Postgres,
+  username: System.get_env("DB_USER") || "postgres",
+  password: System.get_env("DB_PASSWORD") || "postgres",
+  database: System.get_env("DB_NAME") || "payorlink_dev",
+  hostname: System.get_env("DB_HOST") || "localhost",
   pool_size: 10
